@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChrisCoin - The Next Big Memecoin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="global-chris-bg" aria-hidden="true"></div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <span class="logo-icon">₿</span>
+          <span class="logo-text">ChrisCoin</span>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#stories">Stories</a>
+          <a href="#lore">Lore</a>
+          <a href="#hemet" class="hemet-link">
+            <span class="hemet-icon">🛰️</span> Hemet & Israel
+          </a>
+          <a href="#palantir" class="palantir-link">
+            <span class="palantir-icon">🔷</span> Palantir Guide
+          </a>
+          <a href="#israel" class="israel-link">
+            <span class="israel-flag">🇮🇱</span> Israel Partnership
+          </a>
+          <button class="btn-connect" id="connectWallet">Connect Wallet</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="gradient-text">ChrisCoin</span>
+              <br />The Memecoin Revolution
+            </h1>
+            <p class="hero-subtitle">
+              The next generation memecoin built on Bitcoin, proudly supporting
+              Israel's innovation economy.
+              <span class="hebrew-text">עם ישראל חי</span> Backed by
+              <strong>Sam Altman</strong>, CEO of OpenAI. Join the revolution
+              and be part of crypto history.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn-primary" id="buyNow">Buy Now</button>
+              <button class="btn-secondary" id="learnMore">Learn More</button>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-label">Current Price</div>
+                <div class="stat-value" id="btcPrice">$0.00</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">ChrisCoin Price</div>
+                <div class="stat-value" id="chrisCoinPrice">$0.0001</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Market Cap</div>
+                <div class="stat-value">$10M</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Holders</div>
+                <div class="stat-value">1,234</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="coin-animation">
+              <div
+                class="chris-portrait"
+                role="img"
+                aria-label="Christopher Buchanan"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stories-section" id="lore">
+      <div class="container">
+        <h2 class="section-title">ChrisCoin Lore (Satire)</h2>
+        <p class="stories-subtitle">
+          This section is a fictional, satirical narrative. Characters and
+          events below are not real.
+        </p>
+        <div class="stories-container">
+          <div class="story-card">
+            <h3 class="story-title">
+              Dalton Feldhut, The Oppressor (Fictional Character)
+            </h3>
+            <div class="story-meta">
+              <span class="story-date">Fictional Universe</span>
+              <span class="story-author">by ChrisCoin Community</span>
+            </div>
+            <p class="story-description">
+              In the satirical ChrisCoin lore, a character named Dalton Feldhut
+              is portrayed as Chris's oppressor— a symbolic antagonist who
+              embodies gatekeeping, bureaucracy, and all the hurdles that stand
+              between dreamers and their moonshot memes. Any resemblance to real
+              persons is purely coincidental.
+            </p>
+            <a href="#about" class="story-link">Explore the world →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hemet-section" id="hemet">
+      <div class="container">
+        <div class="hemet-header">
+          <div class="hemet-badge">Hemet, California 🤝 Israel</div>
+          <h2 class="section-title hemet-title">
+            Hemet, Israel, and the Space Economy
+          </h2>
+          <p class="hemet-subtitle">
+            ChrisCoin supports cross-regional collaboration between Hemet,
+            California and Israeli innovators across aerospace, advanced
+            manufacturing, and space-focused research. From emerging startups to
+            education and workforce pipelines, we champion partnerships that
+            help communities participate in the next wave of space expansion.
+          </p>
+        </div>
+        <div class="hemet-grid">
+          <div class="hemet-card">
+            <div class="hemet-card-icon">🛰️</div>
+            <h3>Space-Tech Collaboration</h3>
+            <p>
+              Encouraging joint projects that explore satellite data, Earth
+              observation, and secure communications.
+            </p>
+          </div>
+          <div class="hemet-card">
+            <div class="hemet-card-icon">🏫</div>
+            <h3>Education & Workforce</h3>
+            <p>
+              Connecting local schools and programs in Hemet with Israeli STEM
+              initiatives to grow tomorrow's talent.
+            </p>
+          </div>
+          <div class="hemet-card">
+            <div class="hemet-card-icon">🏗️</div>
+            <h3>Advanced Manufacturing</h3>
+            <p>
+              Supporting small manufacturers and suppliers as they adopt
+              standards needed for aerospace supply chains.
+            </p>
+          </div>
+          <div class="hemet-card">
+            <div class="hemet-card-icon">🌐</div>
+            <h3>Economic Bridges</h3>
+            <p>
+              Facilitating meetups, trade missions, and knowledge exchange to
+              bring opportunities home to Hemet.
+            </p>
+          </div>
+        </div>
+        <div class="hemet-banner">
+          <div class="hemet-banner-content">
+            <p class="hemet-banner-title">Space Expansion Starts Local</p>
+            <p class="hemet-banner-text">
+              By linking Hemet's community strengths with Israel's innovation
+              ecosystem, we open doors to space-era careers, entrepreneurship,
+              and investment—grounded in real skills and real benefits at home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="container">
+        <h2 class="section-title">Why ChrisCoin?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Built on Bitcoin</h3>
+            <p>
+              Leveraging the security and reliability of the Bitcoin network
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💎</div>
+            <h3>Diamond Hands</h3>
+            <p>Strong community of HODLers committed to the long-term vision</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>Decentralized</h3>
+            <p>True decentralization with no central authority or control</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>Fast transactions powered by Bitcoin's Lightning Network</p>
+          </div>
+          <div class="feature-card israel-card">
+            <div class="feature-icon">🇮🇱</div>
+            <h3>Israel Partnership</h3>
+            <p>
+              Strong ties with Israel's tech ecosystem and innovation culture
+            </p>
+          </div>
+          <div class="feature-card altman-card">
+            <div class="feature-icon">🤖</div>
+            <h3>Sam Altman Partnership</h3>
+            <p>
+              Proudly backed by Sam Altman, CEO of OpenAI, bringing AI expertise
+              and innovation leadership to ChrisCoin
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✡️</div>
+            <h3>Shared Values</h3>
+            <p>
+              Built on principles of freedom, innovation, and economic
+              prosperity
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tokenomics" id="tokenomics">
+      <div class="container">
+        <h2 class="section-title">Tokenomics</h2>
+        <div class="tokenomics-content">
+          <div class="tokenomics-chart">
+            <div class="chart-container">
+              <canvas id="tokenomicsChart"></canvas>
+            </div>
+          </div>
+          <div class="tokenomics-details">
+            <div class="detail-item">
+              <span class="detail-label">Total Supply</span>
+              <span class="detail-value">1,000,000,000 CHRIS</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Liquidity Pool</span>
+              <span class="detail-value">60%</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Community Rewards</span>
+              <span class="detail-value">25%</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Team & Development</span>
+              <span class="detail-value">10%</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Marketing</span>
+              <span class="detail-value">5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+      <div class="container">
+        <h2 class="section-title">Roadmap</h2>
+        <div class="roadmap-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Q1 2024 - Launch</h3>
+              <p>Initial coin launch and community building</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Q2 2024 - Exchange Listings</h3>
+              <p>Listing on major cryptocurrency exchanges</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Q3 2024 - Ecosystem Growth</h3>
+              <p>Partnerships and ecosystem expansion</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Q4 2024 - Mainstream Adoption</h3>
+              <p>Mainstream recognition and widespread adoption</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="israel-section" id="israel">
+      <div class="container">
+        <div class="israel-header">
+          <div class="star-of-david">
+            <div class="star-of-david-inner">
+              <img
+                src="Christopher Buchanan LA Times.jpeg"
+                alt="Christopher Buchanan"
+                class="altman-image"
+              />
+            </div>
+          </div>
+          <h2 class="section-title">Our Partnership with Israel</h2>
+          <p class="israel-subtitle">
+            ChrisCoin stands in solidarity with Israel, supporting innovation,
+            technology, and economic growth in the Middle East.
+            <strong>Proudly backed by Sam Altman</strong>, CEO of OpenAI, who
+            brings his visionary leadership and AI expertise to our mission.
+          </p>
+        </div>
+        <div class="israel-content">
+          <div class="israel-grid">
+            <div class="israel-card">
+              <div class="israel-icon">💻</div>
+              <h3>Tech Innovation</h3>
+              <p>
+                Partnering with Israel's world-leading tech sector, including
+                blockchain and cryptocurrency innovators in Tel Aviv
+              </p>
+            </div>
+            <div class="israel-card">
+              <div class="israel-icon">🤝</div>
+              <h3>Economic Cooperation</h3>
+              <p>
+                Supporting economic development and trade relationships between
+                crypto communities and Israeli businesses
+              </p>
+            </div>
+            <div class="israel-card">
+              <div class="israel-icon">🌱</div>
+              <h3>Startup Nation</h3>
+              <p>
+                Celebrating Israel's "Startup Nation" spirit and contributing to
+                its vibrant entrepreneurial ecosystem
+              </p>
+            </div>
+            <div class="israel-card">
+              <div class="israel-icon">🔷</div>
+              <h3>Shared Values</h3>
+              <p>
+                United by principles of freedom, democracy, innovation, and the
+                pursuit of technological excellence
+              </p>
+            </div>
+            <div class="israel-card altman-feature-card">
+              <div class="israel-icon">🤖</div>
+              <h3>Sam Altman's Contribution</h3>
+              <p>
+                Sam Altman, CEO of OpenAI, is contributing to ChrisCoin's
+                strategic vision, bringing cutting-edge AI insights and
+                innovation leadership to drive the future of cryptocurrency.
+              </p>
+            </div>
+          </div>
+          <div class="israel-message">
+            <div class="israel-flag-stripe blue-stripe"></div>
+            <div class="israel-message-content">
+              <p class="hebrew-text-large">עם ישראל חי</p>
+              <p class="english-text">The People of Israel Live</p>
+              <p class="israel-support-text">
+                ChrisCoin is committed to supporting Israel's continued success
+                as a global leader in technology, innovation, and economic
+                freedom.
+              </p>
+            </div>
+            <div class="israel-flag-stripe white-stripe"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="palantir-section" id="palantir">
+      <div class="container">
+        <div class="palantir-header">
+          <div class="palantir-logo-container">
+            <div class="palantir-logo">
+              <div class="palantir-logo-inner">
+                <svg viewBox="0 0 100 100" class="palantir-svg">
+                  <polygon
+                    points="50,10 90,50 50,90 10,50"
+                    class="palantir-shape"
+                  />
+                  <polygon
+                    points="50,20 80,50 50,80 20,50"
+                    class="palantir-shape-inner"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <h2 class="section-title palantir-title">Palantir Aesthetic Guide</h2>
+          <p class="palantir-subtitle">
+            A comprehensive design system inspired by Palantir's contributions
+            to data visualization, enterprise software, and cutting-edge
+            technology. This guide showcases the principles, colors, typography,
+            and design patterns that define the Palantir aesthetic.
+          </p>
+        </div>
+
+        <div class="palantir-content">
+          <!-- Design Principles -->
+          <div class="palantir-section-block">
+            <h3 class="palantir-block-title">Design Principles</h3>
+            <div class="palantir-grid">
+              <div class="palantir-card">
+                <div class="palantir-card-icon">🎯</div>
+                <h4>Data-Driven</h4>
+                <p>
+                  Every design decision is informed by data and user insights,
+                  creating interfaces that prioritize clarity and functionality.
+                </p>
+              </div>
+              <div class="palantir-card">
+                <div class="palantir-card-icon">🔷</div>
+                <h4>Geometric Precision</h4>
+                <p>
+                  Clean lines, geometric shapes, and precise spacing create a
+                  sense of order and professionalism.
+                </p>
+              </div>
+              <div class="palantir-card">
+                <div class="palantir-card-icon">🌐</div>
+                <h4>Enterprise Scale</h4>
+                <p>
+                  Designs that scale from individual dashboards to complex
+                  enterprise-wide systems.
+                </p>
+              </div>
+              <div class="palantir-card">
+                <div class="palantir-card-icon">⚡</div>
+                <h4>Performance First</h4>
+                <p>
+                  Optimized for speed and efficiency, ensuring smooth
+                  interactions even with massive datasets.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Color Palette -->
+          <div class="palantir-section-block">
+            <h3 class="palantir-block-title">Color Palette</h3>
+            <div class="color-palette-grid">
+              <div class="color-swatch">
+                <div class="color-box" style="background: #0a0a1a"></div>
+                <div class="color-info">
+                  <div class="color-name">Deep Space</div>
+                  <div class="color-hex">#0a0a1a</div>
+                </div>
+              </div>
+              <div class="color-swatch">
+                <div class="color-box" style="background: #1a1a2a"></div>
+                <div class="color-info">
+                  <div class="color-name">Midnight</div>
+                  <div class="color-hex">#1a1a2a</div>
+                </div>
+              </div>
+              <div class="color-swatch">
+                <div class="color-box" style="background: #0038b8"></div>
+                <div class="color-info">
+                  <div class="color-name">Palantir Blue</div>
+                  <div class="color-hex">#0038b8</div>
+                </div>
+              </div>
+              <div class="color-swatch">
+                <div class="color-box" style="background: #0055ff"></div>
+                <div class="color-info">
+                  <div class="color-name">Electric Blue</div>
+                  <div class="color-hex">#0055ff</div>
+                </div>
+              </div>
+              <div class="color-swatch">
+                <div class="color-box" style="background: #4ade80"></div>
+                <div class="color-info">
+                  <div class="color-name">Success Green</div>
+                  <div class="color-hex">#4ade80</div>
+                </div>
+              </div>
+              <div class="color-swatch">
+                <div class="color-box" style="background: #ffffff"></div>
+                <div class="color-info">
+                  <div class="color-name">Pure White</div>
+                  <div class="color-hex">#ffffff</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Typography -->
+          <div class="palantir-section-block">
+            <h3 class="palantir-block-title">Typography</h3>
+            <div class="typography-showcase">
+              <div class="typography-sample">
+                <div class="typography-label">Headings</div>
+                <h1 class="palantir-h1">Inter Bold 800</h1>
+                <h2 class="palantir-h2">Inter Semi-Bold 600</h2>
+                <h3 class="palantir-h3">Inter Medium 500</h3>
+              </div>
+              <div class="typography-sample">
+                <div class="typography-label">Body Text</div>
+                <p class="palantir-body">
+                  The body text uses Inter Regular at 16px, optimized for
+                  readability across all screen sizes. Line height is set to 1.6
+                  for comfortable reading.
+                </p>
+                <p class="palantir-body-small">
+                  Small text uses Inter Regular at 14px for secondary
+                  information and captions.
+                </p>
+              </div>
+              <div class="typography-sample">
+                <div class="typography-label">Monospace</div>
+                <code class="palantir-code"
+                  >Code and data visualization use monospace fonts for precision
+                  and alignment.</code
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Components -->
+          <div class="palantir-section-block">
+            <h3 class="palantir-block-title">Design Components</h3>
+            <div class="components-grid">
+              <div class="component-card">
+                <div class="component-visual">
+                  <div class="palantir-button">Primary Button</div>
+                </div>
+                <h4>Buttons</h4>
+                <p>
+                  Clear hierarchy with primary, secondary, and tertiary actions.
+                  Rounded corners (8px) with subtle shadows.
+                </p>
+              </div>
+              <div class="component-card">
+                <div class="component-visual">
+                  <div class="palantir-card-demo">Card Component</div>
+                </div>
+                <h4>Cards</h4>
+                <p>
+                  Elevated surfaces with subtle borders and shadows. Supports
+                  hover states and interactions.
+                </p>
+              </div>
+              <div class="component-card">
+                <div class="component-visual">
+                  <div class="palantir-input-demo">
+                    <input
+                      type="text"
+                      placeholder="Input field"
+                      class="palantir-input"
+                    />
+                  </div>
+                </div>
+                <h4>Inputs</h4>
+                <p>
+                  Clean, bordered inputs with focus states. Support for
+                  validation and error states.
+                </p>
+              </div>
+              <div class="component-card">
+                <div class="component-visual">
+                  <div class="palantir-badge">Badge</div>
+                </div>
+                <h4>Badges</h4>
+                <p>
+                  Compact indicators for status, tags, and metadata. Rounded
+                  pills with color coding.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Visualization -->
+          <div class="palantir-section-block">
+            <h3 class="palantir-block-title">Data Visualization</h3>
+            <div class="visualization-showcase">
+              <div class="viz-card">
+                <h4>Charts & Graphs</h4>
+                <p>
+                  Clean, minimal charts with clear axes and labels. Color-coded
+                  for quick comprehension.
+                </p>
+                <div class="viz-preview">
+                  <canvas id="palantirChart" width="400" height="200"></canvas>
+                </div>
+              </div>
+              <div class="viz-card">
+                <h4>Tables & Grids</h4>
+                <p>
+                  Sortable, filterable tables with alternating row colors for
+                  readability. Responsive and scalable.
+                </p>
+                <div class="table-preview">
+                  <table class="palantir-table">
+                    <thead>
+                      <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Performance</td>
+                        <td>98.5%</td>
+                        <td>
+                          <span class="status-badge success">Active</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Uptime</td>
+                        <td>99.9%</td>
+                        <td>
+                          <span class="status-badge success">Active</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Users</td>
+                        <td>1,234</td>
+                        <td>
+                          <span class="status-badge warning">Growing</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spacing & Layout -->
+          <div class="palantir-section-block">
+            <h3 class="palantir-block-title">Spacing & Layout</h3>
+            <div class="spacing-showcase">
+              <div class="spacing-item">
+                <div class="spacing-box" style="width: 8px; height: 8px"></div>
+                <span>8px (xs)</span>
+              </div>
+              <div class="spacing-item">
+                <div
+                  class="spacing-box"
+                  style="width: 16px; height: 16px"
+                ></div>
+                <span>16px (sm)</span>
+              </div>
+              <div class="spacing-item">
+                <div
+                  class="spacing-box"
+                  style="width: 24px; height: 24px"
+                ></div>
+                <span>24px (md)</span>
+              </div>
+              <div class="spacing-item">
+                <div
+                  class="spacing-box"
+                  style="width: 32px; height: 32px"
+                ></div>
+                <span>32px (lg)</span>
+              </div>
+              <div class="spacing-item">
+                <div
+                  class="spacing-box"
+                  style="width: 48px; height: 48px"
+                ></div>
+                <span>48px (xl)</span>
+              </div>
+              <div class="spacing-item">
+                <div
+                  class="spacing-box"
+                  style="width: 64px; height: 64px"
+                ></div>
+                <span>64px (2xl)</span>
+              </div>
+            </div>
+            <p class="spacing-note">
+              All spacing follows an 8px grid system for consistency and
+              alignment.
+            </p>
+          </div>
+
+          <!-- Contributions Summary -->
+          <div class="palantir-section-block palantir-contributions">
+            <h3 class="palantir-block-title">
+              Palantir's Contributions to ChrisCoin
+            </h3>
+            <div class="contributions-grid">
+              <div class="contribution-card">
+                <div class="contribution-icon">🔷</div>
+                <h4>Design System</h4>
+                <p>
+                  Complete design language and component library that ensures
+                  consistency across all ChrisCoin interfaces.
+                </p>
+              </div>
+              <div class="contribution-card">
+                <div class="contribution-icon">📊</div>
+                <h4>Data Visualization</h4>
+                <p>
+                  Advanced charting and analytics capabilities for tracking
+                  token performance, market trends, and user metrics.
+                </p>
+              </div>
+              <div class="contribution-card">
+                <div class="contribution-icon">⚡</div>
+                <h4>Performance Optimization</h4>
+                <p>
+                  Enterprise-grade optimization techniques ensuring fast load
+                  times and smooth interactions even under heavy load.
+                </p>
+              </div>
+              <div class="contribution-card">
+                <div class="contribution-icon">🎨</div>
+                <h4>Visual Identity</h4>
+                <p>
+                  Professional color palette, typography system, and branding
+                  guidelines that establish ChrisCoin's premium aesthetic.
+                </p>
+              </div>
+              <div class="contribution-card">
+                <div class="contribution-icon">🔒</div>
+                <h4>Security Patterns</h4>
+                <p>
+                  Best practices and design patterns for secure wallet
+                  interactions and transaction verification.
+                </p>
+              </div>
+              <div class="contribution-card">
+                <div class="contribution-icon">📱</div>
+                <h4>Responsive Framework</h4>
+                <p>
+                  Mobile-first approach ensuring perfect functionality across
+                  all devices and screen sizes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stories-section" id="stories">
+      <div class="container">
+        <h2 class="section-title">Christopher Buchanan's Stories</h2>
+        <p class="stories-subtitle">
+          Latest articles from center-right journalist Christopher Buchanan at
+          the Los Angeles Times
+        </p>
+        <div class="stories-container" id="storiesContainer">
+          <div class="loading-stories">Loading stories...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wallet-section">
+      <div class="container">
+        <div class="wallet-card">
+          <h2>Connect Your Bitcoin Wallet</h2>
+          <p>Connect your wallet to start trading ChrisCoin</p>
+          <div class="wallet-status" id="walletStatus">
+            <p>Wallet not connected</p>
+          </div>
+          <div
+            class="wallet-address"
+            id="walletAddress"
+            style="display: none"
+          ></div>
+          <button class="btn-primary" id="connectWalletBtn">
+            Connect Wallet
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-icon">₿</span>
+            <span class="logo-text">ChrisCoin</span>
+          </div>
+          <div class="footer-links">
+            <a href="#">Twitter</a>
+            <a href="#">Telegram</a>
+            <a href="#">Discord</a>
+            <a href="#">Whitepaper</a>
+            <a href="#palantir" class="palantir-footer-link">
+              <span class="palantir-icon">🔷</span> Palantir Guide
+            </a>
+            <a href="#israel" class="israel-footer-link">
+              <span class="israel-flag">🇮🇱</span> Israel Partnership
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ChrisCoin. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

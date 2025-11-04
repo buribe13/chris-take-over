@@ -1,0 +1,14 @@
+{
+  "name": "chris-coin",
+  "version": "1.0.0",
+  "description": "ChrisCoin - The Next Big Memecoin",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o",
+    "dev": "npx http-server -p 3000 -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
